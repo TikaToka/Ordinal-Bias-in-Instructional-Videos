@@ -1,7 +1,7 @@
 # [절차적 비디오 이해를 위한 행동 이해 태스크에서의 편향 탐구](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11705159)
 Code for [Exploring bias in Action Understanding Task for Comprehending Instructional Videos](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11705159) (KSC 2023)
 
-This repository only contains video modification code. Refer to each model repository for train and inference.
+This repository only contains video modification and sample visualization code. Refer to each model repository for train and inference.
 
 ## Setup
 `pip install numpy tqdm setuptools`
@@ -12,6 +12,9 @@ This repository only contains video modification code. Refer to each model repos
 
 ## Run
 `python main.py --dataset {gtea/breakfast/50salads} --mode {blank/mask,all} --seed {seed} --name {name}`
+
+## Evaluate (Visualize)
+Use `visualize.ipynb`
 
 ## Output
 ./data_{name}
