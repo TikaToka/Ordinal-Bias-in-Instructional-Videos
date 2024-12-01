@@ -17,11 +17,12 @@ This repository only contains video modification code. Refer to each model repos
 ./data_{name}
 
 ## Result
-[Modification](images/modification.png "Modification Example")
-
-[Quantitative](images/quantitative.png "Quantitative Result")
-
-[Qualitative](images/qualitative.png "Qualitative Result")
+### Modification Example
+![Modification](images/modification.png)
+### Quantitative Result
+![Quantitative](images/quantitative.png)
+### Qualitative Result
+![Qualitative](images/qualitative.png)
 
 ## Acknowledgement
 Datasets
