@@ -14,7 +14,7 @@ This repository only contains video modification and sample visualization code. 
 `python main.py --dataset {gtea/breakfast/50salads} --mode {blank/mask,all} --seed {seed} --name {name}`
 
 ## Evaluate (Visualize)
-Use `visualize.ipynb`
+Use `visualize.ipynb` by changing directories in shell 2, and 3
 
 ## Output
 ./data_{name}
