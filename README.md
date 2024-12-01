@@ -26,12 +26,12 @@ This repository only contains video modification code. Refer to each model repos
 
 ## Acknowledgement
 Datasets
-[GTEA]([https://github.com/go-gitea/gitea](https://cbs.ic.gatech.edu/fpv/))
-[50Salads](https://cvip.computing.dundee.ac.uk/datasets/foodpreparation/50salads/)
-[Breakfast](https://serre-lab.clps.brown.edu/resource/breakfast-actions-dataset/)
+1. [GTEA]([https://github.com/go-gitea/gitea](https://cbs.ic.gatech.edu/fpv/))
+2. [50Salads](https://cvip.computing.dundee.ac.uk/datasets/foodpreparation/50salads/)
+3. [Breakfast](https://serre-lab.clps.brown.edu/resource/breakfast-actions-dataset/)
 
 Models
-[ASFormer](https://github.com/ChinaYi/ASFormer)
-[MS-TCN](https://github.com/yabufarha/ms-tcn)
-[MS-TCN++](https://github.com/sj-li/MS-TCN2)
-[DiffAct](https://github.com/Finspire13/DiffAct)
+1. [ASFormer](https://github.com/ChinaYi/ASFormer)
+2. [MS-TCN](https://github.com/yabufarha/ms-tcn)
+3. [MS-TCN++](https://github.com/sj-li/MS-TCN2)
+4. [DiffAct](https://github.com/Finspire13/DiffAct)
