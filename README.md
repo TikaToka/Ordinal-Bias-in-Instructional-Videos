@@ -26,7 +26,7 @@ This repository only contains video modification code. Refer to each model repos
 
 ## Acknowledgement
 Datasets
-1. [GTEA]([https://github.com/go-gitea/gitea](https://cbs.ic.gatech.edu/fpv/))
+1. [GTEA](https://cbs.ic.gatech.edu/fpv/)
 2. [50Salads](https://cvip.computing.dundee.ac.uk/datasets/foodpreparation/50salads/)
 3. [Breakfast](https://serre-lab.clps.brown.edu/resource/breakfast-actions-dataset/)
 
