@@ -11,7 +11,7 @@ This repository only contains video modification code. Refer to each model repos
 2. Unzip the data, rename it to "data" and put into the current directory
 
 ## Run
-`python main.py --dataset {gtea/breakfast/50salads} --mode {blank/mask,/all} --seed {seed} --name {name}`
+`python main.py --dataset {gtea/breakfast/50salads} --mode {blank/mask,all} --seed {seed} --name {name}`
 
 ## Output
 ./data_{name}
