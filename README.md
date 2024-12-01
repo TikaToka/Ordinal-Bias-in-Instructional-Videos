@@ -29,6 +29,11 @@ Use `visualize.ipynb` by changing directories in shell 2, and 3
 ### Qualitative Result
 ![Qualitative](images/qualitative.png)
 
+## Cite
+```
+Joochan Kim, Minjoon Jung, & Byoung-Tak Zhang (2023-12-20). Exploring Bias in Action Understanding Task for Comprehending Instructional Videos. 한국정보과학회 학술발표논문집, 부산.
+```
+
 ## Acknowledgement
 Datasets
 1. [GTEA](https://cbs.ic.gatech.edu/fpv/)
