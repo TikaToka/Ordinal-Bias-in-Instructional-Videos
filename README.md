@@ -1,4 +1,4 @@
-# [절차적 비디오 이해를 위한 행동 이해 태스크에서의 편향 탐구](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11705159)
+## [절차적 비디오 이해를 위한 행동 이해 태스크에서의 편향 탐구](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11705159)
 Code for [Exploring bias in Action Understanding Task for Comprehending Instructional Videos](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11705159) (KSC 2023)
 
 [Thesis version](https://snu-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=82SNU_INST51953513730002591&context=L&vid=82SNU&lang=ko_KR&search_scope=THESIS&adaptor=Local%20Search%20Engine&tab=thesis&query=creator,contains,%EA%B9%80%EC%A3%BC%EC%B0%AC,AND&mode=advanced&offset=0)
