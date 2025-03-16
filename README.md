@@ -1,6 +1,6 @@
 ## Official Repository for **Exploring Ordinal Bias in Action Recognition for Instructional Videos**
 
-to be appeared at **ICLRW 2025**,  [**KSC 2023**](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11705159), [**Thesis**](https://snu-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=82SNU_INST51953513730002591&context=L&vid=82SNU&lang=ko_KR&search_scope=THESIS&adaptor=Local%20Search%20Engine&tab=thesis&query=creator,contains,%EA%B9%80%EC%A3%BC%EC%B0%AC,AND&mode=advanced&offset=0)
+to be appeared at **ICLRW 2025**,  [**KSC 2023**](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11705159), [**Master Thesis**](https://snu-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=82SNU_INST51953513730002591&context=L&vid=82SNU&lang=ko_KR&search_scope=THESIS&adaptor=Local%20Search%20Engine&tab=thesis&query=creator,contains,%EA%B9%80%EC%A3%BC%EC%B0%AC,AND&mode=advanced&offset=0)
 
 This repository only contains video modification and sample visualization code. Refer to each model repository for train and inference.
 
