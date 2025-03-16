@@ -1,5 +1,4 @@
-## [절차적 비디오 이해를 위한 행동 이해 태스크에서의 편향 탐구](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11705159)
-Official Repository for **Exploring Ordinal Bias in Action Recognition for Instructional Videos**
+## Official Repository for **Exploring Ordinal Bias in Action Recognition for Instructional Videos**
 
 to be appeared at ICLRW 2025
 
