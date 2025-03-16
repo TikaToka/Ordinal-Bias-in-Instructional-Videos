@@ -4,9 +4,13 @@ to be appeared at **ICLRW 2025**,  [**KSC 2023**](https://www.dbpia.co.kr/journa
 
 This repository only contains video modification and sample visualization code. Refer to each model repository for train and inference.
 
+Code Cleaning coming soon
+
 ## Updates
 2025.03 Paper has been accepted to SCSL @ ICLR 2025
-2024.02 Master thesis has been released to SNU Library 
+
+2024.02 Master thesis has been released to SNU Library
+
 2023.12 Paper has been presented at KSC 2023
 
 ## Setup
