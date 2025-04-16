@@ -4,7 +4,9 @@
 
 KSC 2023 Poster | To be appeared at **ICLRW 2025**
 
-This repository only contains video modification and sample visualization code. Refer to each model repository for train and inference.
+This repository only contains video modification and sample visualization code. 
+
+Refer to each model repository for train and inference.
 
 
 ## Updates
