@@ -7,7 +7,6 @@ KSC 2023 Poster | To be appeared at **ICLRW 2025**
 This repository only contains video modification and sample visualization code. Refer to each model repository for train and inference.
 
 
-
 ## Updates
 2025.04 **Code Cleaning coming soon**
 
@@ -43,7 +42,7 @@ Use `visualize.ipynb` by changing directories in shell 2, and 3
 
 ## Cite
 ```
-Joochan Kim, Minjoon Jung, & Byoung-Tak Zhang (2023-12-20). Exploring Bias in Action Understanding Task for Comprehending Instructional Videos. 한국정보과학회 학술발표논문집, 부산.
+Kim, Joochan, Minjoon Jung, and Byoung-Tak Zhang. "Exploring Ordinal Bias in Action Recognition for Instructional Videos." Workshop on Spurious Correlation and Shortcut Learning: Foundations and Solutions.
 ```
 
 ## Acknowledgement
