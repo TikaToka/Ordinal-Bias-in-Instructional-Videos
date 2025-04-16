@@ -1,4 +1,4 @@
-## Official Repository for **Exploring Ordinal Bias in Action Recognition for Instructional Videos**
+## Official Repository for "Exploring Ordinal Bias in Action Recognition for Instructional Videos"
 
 [arxiv](https://arxiv.org/abs/2504.06580) / [poster](https://tikatoka.github.io/data/32.pdf)
 
@@ -6,9 +6,10 @@ to be appeared at **ICLRW 2025**
 
 This repository only contains video modification and sample visualization code. Refer to each model repository for train and inference.
 
-**Code Cleaning coming soon**
+
 
 ## Updates
+2025.04 **Code Cleaning coming soon**
 2025.03 Paper has been accepted to SCSL @ ICLR 2025
 
 2024.02 Master thesis has been released to SNU Library
