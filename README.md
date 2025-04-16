@@ -2,7 +2,7 @@
 
 [arxiv](https://arxiv.org/abs/2504.06580) / [poster](https://tikatoka.github.io/data/32.pdf)
 
-to be appeared at **ICLRW 2025**
+KSC 2023 Poster | To be appeared at **ICLRW 2025**
 
 This repository only contains video modification and sample visualization code. Refer to each model repository for train and inference.
 
