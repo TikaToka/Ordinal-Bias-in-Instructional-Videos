@@ -2,7 +2,7 @@
 
 [arxiv](https://arxiv.org/abs/2504.06580) / [poster](https://tikatoka.github.io/data/32.pdf)
 
-**ICLRW 2025**
+**SCSL @ ICLRW 2025**
 
 This repository only contains video modification and sample visualization code. 
 
