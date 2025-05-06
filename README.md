@@ -10,6 +10,8 @@ Refer to each model repository for train and inference.
 
 
 ## Updates
+2025.05 Code cleaned for `main.py`
+
 2025.04 **Code Cleaning coming soon**
 
 2025.03 Paper has been accepted to SCSL @ ICLR 2025
@@ -26,7 +28,7 @@ Refer to each model repository for train and inference.
 2. Unzip the data, rename it to "data" and put into the current directory
 
 ## Run
-`python main.py --dataset {gtea/breakfast/50salads} --mode {blank/mask,all} --seed {seed} --name {name}`
+`python main.py --dataset {gtea/breakfast/50salads} --mode {blank/mask/all/rand} --seed {seed} --name {name}`
 
 ## Evaluate (Visualize)
 Use `visualize.ipynb` by changing directories in shell 2, and 3
