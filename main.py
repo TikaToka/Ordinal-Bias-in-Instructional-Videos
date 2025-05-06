@@ -72,7 +72,7 @@ for s in tqdm(file_names):
             num += 1
         action_units.append(frames)
         
-    if parser.parse_args().mode == 'blank':
+    if parser.parse_args().mode == 'blank': # MLM style masking
         for ac in range(len(action_units)):
             if random.randint(1, 100) <= 15:
                 if dataset == 'gtea':
@@ -83,70 +83,8 @@ for s in tqdm(file_names):
                     action_units[ac] = np.zeros(
                         np.shape(action_units[ac])).tolist()
                     label_idx[ac] = ('SIL', label_idx[ac][1])
-                # else:  # 50salads
-                #     print("50salads")
-                #     action_units[ac] = np.zeros(
-                #         np.shape(action_units[ac])).tolist()
-                #     break
 
-    # if parser.parse_args().mode == 'reverse':
-    #     print("reverse")
-    #     action_units.reverse()
-    #     label_idx.reverse()
-
-    # elif parser.parse_args().mode == 'one':
-    #     print("one")
-    #     if len(action_units) >= 3:
-    #         action_units[1], action_units[2] = action_units[2], action_units[1]
-    #         label_idx[1], label_idx[2] = label_idx[2], label_idx[1]
-    #     else:
-    #         action_units[0], action_units[1] = action_units[1], action_units[0]
-    #         label_idx[0], label_idx[1] = label_idx[1], label_idx[0]
-
-    # elif parser.parse_args().mode == 'swap':
-    #     print("swap")
-    #     idx = random.randint(0, len(action_units)-2)
-    #     action_units[idx], action_units[idx +
-    #                                     1] = action_units[idx+1], action_units[idx]
-    #     label_idx[idx], label_idx[idx+1] = label_idx[idx+1], label_idx[idx]
-        
-    # elif parser.parse_args().mode == 'blank15':
-    #     for ac in range(len(action_units)):
-    #         if random.randint(1, 100) <= 15:
-    #             if dataset == 'gtea':
-    #                 action_units[ac] = np.zeros(
-    #                     np.shape(action_units[ac])).tolist()
-    #                 label_idx[ac] = ('background', label_idx[ac][1])
-    #             elif dataset == 'breakfast':
-    #                 action_units[ac] = np.zeros(
-    #                     np.shape(action_units[ac])).tolist()
-
-    # elif parser.parse_args().mode == 'blank50':
-    #     for ac in range(len(action_units)):
-    #         if random.randint(1, 100) <= 50:
-    #             if dataset == 'gtea':
-    #                 action_units[ac] = np.zeros(
-    #                     np.shape(action_units[ac])).tolist()
-    #                 label_idx[ac] = ('background', label_idx[ac][1])
-    #             elif dataset == 'breakfast':
-    #                 action_units[ac] = np.zeros(
-    #                     np.shape(action_units[ac])).tolist()
-                    
-    # elif parser.parse_args().mode == 'blank100':
-    #     si = np.shape(np.array(action_units))
-    #     for ac in range(len(action_units)):
-    #         if random.randint(1, 100) <= 100:
-    #             if dataset == 'gtea':
-    #                 action_units[ac] = np.zeros(
-    #                     np.shape(action_units[ac])).tolist()
-    #                 label_idx[ac] = ('background', label_idx[ac][1])
-    #             elif dataset == 'breakfast':
-    #                 action_units[ac] = np.zeros(
-    #                     np.shape(action_units[ac])).tolist()
-    #                 label_idx[ac] = ('SIL', label_idx[ac][1])
-    #     assert (si == np.shape(np.array(action_units)))
-
-    elif parser.parse_args().mode == 'mask':
+    elif parser.parse_args().mode == 'mask': # Action Masking
         if dataset == 'gtea':
             lists = {"close": "put"}
             temp = 'background'
@@ -162,58 +100,28 @@ for s in tqdm(file_names):
                         np.shape(action_units[ac+1])).tolist()
                     label_idx[ac+1] = (temp, label_idx[ac+1][1])
 
-    # # SWAP RANDOM 2
-    # elif parser.parse_args().mode == 'random':
-    #     print("random")
-    #     rn = random.sample(range(0, len(action_units)), 2)
-    #     action_units[rn[0]], action_units[rn[1]
-    #                                       ] = action_units[rn[1]], action_units[rn[0]]
-    #     label_idx[rn[0]], label_idx[rn[1]] = label_idx[rn[1]], label_idx[rn[0]]
-
-    elif parser.parse_args().mode == 'all':
+    elif parser.parse_args().mode == 'all': # Sequence Shuffling
         print("all")
         idx = list(range(len(action_units)))
         random.shuffle(idx)
         action_units = [action_units[i] for i in idx]
         label_idx = [label_idx[i] for i in idx]
 
-    # elif parser.parse_args().mode == 'alleasy':
-    #     mid = len(action_units) //2
-    #     action_units = action_units[mid:] + action_units[:mid]
-    #     mid = len(label_idx) //2
-    #     label_idx = label_idx[mid:] + label_idx[:mid]
         
-    # elif parser.parse_args().mode == 'rand':
-    #     if dataset == 'gtea':
-    #         lists = {"put": "take"}
-    #     elif dataset == 'breakfast':
-    #         lists = {"pour_dough2pan": "fry_pancake"}
-    #     else:
-    #         lists = {"cut_tomato": "place_tomato_into_bowl"}
-    #     for ac in range(len(action_units)-1):
-    #         if label_idx[ac][0] in lists.keys():
-    #             rn = random.randint(0, len(action_units)-1)
-    #             action_units[ac+1], action_units[rn
-    #                                             ] = action_units[rn], action_units[ac+1]
-    #             label_idx[ac+1], label_idx[rn] = label_idx[rn], label_idx[ac+1]
+    elif parser.parse_args().mode == 'rand': # Limited Sequence Shuffling
+        if dataset == 'gtea':
+            lists = {"put": "take"}
+        elif dataset == 'breakfast':
+            lists = {"pour_dough2pan": "fry_pancake"}
+        else:
+            lists = {"cut_tomato": "place_tomato_into_bowl"}
+        for ac in range(len(action_units)-1):
+            if label_idx[ac][0] in lists.keys():
+                rn = random.randint(0, len(action_units)-1)
+                action_units[ac+1], action_units[rn
+                                                ] = action_units[rn], action_units[ac+1]
+                label_idx[ac+1], label_idx[rn] = label_idx[rn], label_idx[ac+1]
 
-    # elif parser.parse_args().mode == 'blank_set':
-    #     print("blank_new")
-    #     if dataset == 'gtea':
-    #         lists = {'take': 'background',
-    #                  "close": "put", "open": "background"}
-    #         lab = 'background'
-    #     elif dataset == '50salads':
-    #         continue
-    #     else:
-    #         lists = {"pour_dough2pan": "fry_pancake", "put_egg2plate": "SIL",
-    #                  "cut_orange": "squeeze_orange", "put_bunTogether": "SIL"}
-    #         lab = 'SIL'
-    #     for idx in range(len(label_idx)-1):
-    #         if label_idx[idx] in lists.keys():
-    #             action_units[idx +
-    #                          1] = np.zeros(np.shape(action_units[idx+1])).tolist()
-    #             label_idx[idx+1] = (lab, label_idx[idx+1][1])
     else:
         print("no mode")
         break
@@ -232,11 +140,6 @@ for s in tqdm(file_names):
             num += 1
 
     np.save(outpath + '/features/' + s + ".npy", vout)
-
-    # print(v[:,0])
-    # print(vout[:,-label_idx[-1][1]])
-    # print(action_units[-1][0])
-    # print((v[:,0]==vout[:,-label_idx[-1][1]]).all())
 
     try:
         os.makedirs(outpath + '/groundTruth')
